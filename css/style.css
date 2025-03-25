@@ -1,0 +1,232 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+ 
+h1 {
+    font-family:sans-serif;
+    color: aquamarine;
+    font-weight: 900;
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    z-index: 100;
+}
+nav ul li a {
+    list-style: none;
+    padding: 5px;
+    border: 1px solid blanchedalmond;
+    border-radius: 15px 10px;
+    background-color: rgb(198, 231, 231);
+    margin-right: 5px;
+    
+}
+nav ul li  {
+    text-decoration: none;
+    color:black;
+    font-size: 12px;
+    font-weight: 600;
+}
+footer .flexfooter {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px
+}
+
+footer .fa-brands {
+ color:black;
+ font-size: 19px;
+ margin-right: 10px;
+}
+footer form input {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+footer form button {
+    border: none;
+    background-color: transparent;
+}
+footer form button .fa-arrow-right {
+    font-size: 18px;
+    color: blueviolet;
+}
+footer hr {
+    border: 1px solid burlywood;
+}
+
+.boxModel {
+    background-color: rgba(231, 27, 27, 0.726);
+    border: 20px solid green;
+    width: 700px;
+    height: 500px;
+    margin: 100px;
+}
+.boxModel img {
+    border: 2.5px solid black;
+    padding: 30px 10px;
+    margin: 10px;
+ }
+
+.display img {
+    border: 2px solid green;
+}
+
+.practicaflex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.img-planta {
+    width: 5%;
+}
+ul li a {
+    text-decoration: none;
+    color:aquamarine;
+    font-weight: 200;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.galeria {
+    background-color: rgb( 159, 117, 139);
+    height: 80vh;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 15px;
+    display:grid;
+    grid-template-columns: 200px repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "contenido box2 box3"
+        "contenido box2 box4"
+        "box7 box2 box4 "
+        "box7 box6 box5"
+        "box8 box6 box5"
+
+    
+    ;
+}
+ 
+.box {
+    border: 1px solid blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.box h3 {
+    background-color: rgb(50, 190, 92);
+    padding: 15px;
+    width: 80%;
+
+}
+
+.box1 {
+    grid-area: contenido;
+    background-color: rgb(127, 255, 212);
+}
+.box2 {
+    grid-area: box2;
+    background-color: rgb(13, 143, 179);
+}.box3 {
+    grid-area: box3 ;
+    background-color: rgb(31, 191, 138);
+}.box4 {
+    grid-area: box4;
+    background-color: rgb(29, 211,224);
+}.box5{
+    grid-area: box5;
+    background-color: rgb(38, 167, 124);
+}.box6 {
+    grid-area: box6;
+    background-color: rgb(95, 147, 151);
+}.box7 {
+    grid-area: box7;
+    background-color: rgb(15, 148, 103);
+}.box8 {
+    grid-area: box8;
+    background-color: rgb(30, 142, 180);
+}
+
+@media screen  and (max-width:1024px) {
+    .galeria {
+        grid-template-columns: (4, 1fr);
+        grid-template-rows: (3, 1fr);
+        grid-template-areas: 
+        "contenido contenido box2 box3"
+        "box6 box4 box4 box4"
+        "box7 box8 box8 box5 "
+        ;
+    }
+}
+@media screen  and (max-width:768px) {
+    .galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "contenido" "box1" "box2"
+        "box3" "box4" "box5" "box6"
+        "box7" "box8"
+        ;
+    }
+}
+.planta1 {
+    background-color: black;
+}
+
+.bg-image-titule {
+    font-size: 6rem;
+    color: transparent;
+    background-image: url(../img/anthurium.webp);
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    text-align: center;
+    padding: 35px 0 15px;
+    margin-bottom: 20px;
+}
+
+.imagineconteiner img {
+    position: absolute;
+
+}
+
+.imagineconteiner img:nth-child(1) {
+    top: 0px;
+    left: -35px;
+    width: 40%;
+}
+.imagineconteiner img:nth-child(2) {
+    top:10px;
+    left: 35px%;
+    width: 35%;
+}
+.imagineconteiner img:nth-child(3) {
+    top:34px;
+    left:38%;
+    height: 45px;
+    width: 20%;
+    object-fit: cover;
+}
+
