@@ -44,7 +44,7 @@ footer .flexfooter {
     display:flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px
+    padding: 15px;
 }
 
 footer .fa-brands {
@@ -95,8 +95,8 @@ footer hr {
     flex-wrap: wrap;
     
 }
-.img-planta {
-    width: 5%;
+.boxModel img {
+    width: 30%;
 }
 ul li a {
     text-decoration: none;
@@ -170,7 +170,7 @@ ul li a {
 }
 
 @media screen  and (max-width:1024px) {
-    .galeria {
+.galeria {
         grid-template-columns: (4, 1fr);
         grid-template-rows: (3, 1fr);
         grid-template-areas: 
@@ -195,7 +195,7 @@ ul li a {
     background-color: black;
 }
 
-.bg-image-titule {
+.bg-image-title {
     font-size: 6rem;
     color: transparent;
     background-image: url(../img/anthurium.webp);
@@ -209,24 +209,51 @@ ul li a {
 
 .imagineconteiner img {
     position: absolute;
-
 }
 
+.imagineconteiner  {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
 .imagineconteiner img:nth-child(1) {
     top: 0px;
-    left: -35px;
-    width: 40%;
+    left: 0px;
+    width: 16%;
 }
 .imagineconteiner img:nth-child(2) {
-    top:10px;
-    left: 35px%;
-    width: 35%;
+    top: 250px;
+    width: 30%;
+    left: 0px;
 }
 .imagineconteiner img:nth-child(3) {
-    top:34px;
-    left:38%;
-    height: 45px;
-    width: 20%;
+    top: 0px;
+    left: 17%;
+    height: 250px;
+    width: 24%;
     object-fit: cover;
 }
 
+.imagineconteiner img:nth-child(4) {
+    top: 250px;
+    right: 42%;
+    width: 29%;
+}
+
+@media screen and (max-width:1024px) {
+    .bg-image-title {
+        font-size: 4rem;
+    }
+}
+
+.HeroParagraph p {
+ font-size: 0.9rem;
+}
+
+.HeroHeader{
+    background-color: rgb(32, 75, 7);
+}
+.HeroParagraph p{
+    font-size: 1rem;
+    text-align: justify;
+}
